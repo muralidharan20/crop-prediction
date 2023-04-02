@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import crop_analyze,util_data
+from .views import *
 
 urlpatterns = [
-    path('analyze/',crop_analyze),
+    path('analyze/',CropPredictionView.as_view()),
     path('util/',util_data)
 ]
